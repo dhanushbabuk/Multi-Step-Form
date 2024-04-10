@@ -47,26 +47,26 @@ const MathComfortLevel = ({ handleOptionSelected }) => {
         <h2 className="text-3xl mb-5 font-bold text-center mt-10">
           What is your math comfort level?
         </h2>
-        <p className="text-gray-800 mb-5 text-center text-sm">
+        <p className="text-gray-800 mb-10 text-center text-base ">
           Choose the highest level you feel confident in — you can always adjust
           later.
         </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-4 gap-4">
           {mathLevels.map(({ level, expression, title, subtitle }) => (
             <div
               key={level}
-              className={`bg-white border-2 rounded-lg p-4 flex flex-col hover:border-yellow-300 items-center cursor-pointer ${
+              className={`bg-white border-2 min-h-64 rounded-lg p-4 flex flex-col hover:border-yellow-300 items-center cursor-pointer ${
                 selected === level ? "border-2 border-yellow-400 shadow-md" : ""
               }`}
               onClick={() => handleClick(level)}
             >
               <span
-                className="text-3xl mt-2"
+                className="text-3xl mt-5"
                 dangerouslySetInnerHTML={{
                   __html: renderExpression(expression),
                 }}
               />
-              <span className="text-lg font-semibold mb-2">{title}</span>
+              <span className="text-lg font-semibold mb-2 mt-10">{title}</span>
               <span className="text-gray-600">{subtitle}</span>
             </div>
           ))}

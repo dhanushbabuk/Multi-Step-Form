@@ -60,7 +60,7 @@ const InterestSelection = ({ handleOptionSelected }) => {
               onClick={() => handleOptionSelect(option.option)}
             >
               <span className="mr-2">{option.icon}</span>
-              <span>{option.label}</span>
+              <span className="font-semibold">{option.label}</span>
             </button>
           ))}
         </div>
