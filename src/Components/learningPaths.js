@@ -31,11 +31,7 @@ function LearningPathCard({
           </p>
         </div>
         <div className="md:w-1/3 mt-4 md:mt-0">
-          <img
-            src={preAlgrebraPuzzleImage}
-            className="w-[100px] md:w-full"
-            alt="puzzle image"
-          />
+          <img src={preAlgrebraPuzzleImage} className="w-[100px] md:w-full" />
         </div>
       </div>
     </div>

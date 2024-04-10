@@ -6,7 +6,6 @@ import leftarrow from "../Images/left-arrow-line-symbol.png";
 import InterestSelection from "./InterestSection";
 import TestimonialCard from "./TestinomialCard";
 import LearningPaths from "./learningPaths";
-import LoadingScreen from "./LoadingScreen";
 
 const Form = () => {
   const [page, setPage] = useState(0);
